@@ -1,0 +1,52 @@
+{
+  "name": "tfk-laurentius",
+  "version": "1.0.0",
+  "description": "Arkiv",
+  "license": "MIT",
+  "author": {
+    "name": "Jonas Enge",
+    "email": "jonas.enge@gmail.com",
+    "url": "https://github.com/maccyber"
+   },
+   "contributors": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.2.6"
+  },
+  "scripts": {
+    "test": "standard && tap --reporter=spec test/*.js",
+    "coverage": "tap test/*.js --coverage",
+    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
+    "setup": "npm install && node setup.js"
+  },
+  "keywords": [
+    "Tfk",
+    "Telemark fylkeskommune",
+    "Laurentius"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/telemark/tfk-laurentius.git"
+  },
+  "bugs": {
+    "url": "http://github.com/telemark/tfk-laurentius/issues"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.6",
+    "standard": "^5.4.1",
+    "tap": "^5.1.1"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^5.5.4",
+    "mississippi": "^1.2.0",
+    "streamifier": "^0.1.1",
+    "uuid": "^2.0.1",
+    "wreck": "^7.0.0",
+    "p360": "^1.1.6",
+    "tfk-arkiv-metadatagenerator": "git+https://github.com/telemark/tfk-arkiv-metadatagenerator.git"
+  }
+}
