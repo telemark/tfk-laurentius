@@ -7,10 +7,11 @@ function tfkLaurentius (item, callback) {
   var prepareItem = require('./lib/prepareItem')
   var searchContact = require('./lib/search-contact')
   var addContact = require('./lib/add-private-person')
-  var getStatus = require('./lib/getStatus')
   var getCase = require('./lib/get-case')
   var addCase = require('./lib/add-case')
-  var addDocuments = require('./lib/add-documents.js')
+  var addDocuments = require('./lib/add-documents')
+  var addSecret = require('./lib/add-secret')
+  var addNote = require('./lib/add-note')
   var starter = streamifier.createReadStream(JSON.stringify(item))
 
   function finished (error, data) {
@@ -28,7 +29,8 @@ function tfkLaurentius (item, callback) {
     getCase,
     addCase,
     addDocuments,
-//    getStatus,
+    addSecret,
+    addNote,
     finished
   )
 }
