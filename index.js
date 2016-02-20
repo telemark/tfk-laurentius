@@ -4,6 +4,7 @@ function tfkLaurentius (item, callback) {
   var miss = require('mississippi')
   var streamifier = require('streamifier')
   var getNextJob = require('./lib/get-next-job')
+  var prepareItem = require('./lib/prepareItem')
   var searchContact = require('./lib/search-contact')
   var addContact = require('./lib/add-private-person')
   var getStatus = require('./lib/getStatus')
@@ -21,12 +22,13 @@ function tfkLaurentius (item, callback) {
   miss.pipe(
     starter,
     getNextJob,
+    prepareItem,
     searchContact,
     addContact,
     getCase,
     addCase,
     addDocuments,
-    getStatus,
+//    getStatus,
     finished
   )
 }
