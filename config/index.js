@@ -8,9 +8,9 @@ var config = {
   ARCHIVE_DONE_DIRECTORY_PATH: process.env.ARCHIVE_DONE_DIRECTORY_PATH || 'test/data/archive/done',
   ARCHIVE_ERROR_DIRECTORY_PATH: process.env.ARCHIVE_ERROR_DIRECTORY_PATH || 'test/data/archive/errors',
   p360: {
-    user: 'domain/username', // username
-    password: 'password', // passord
-    baseUrl: 'http://tfk-fh-siweb01t.login.top.no:8088/SI.WS.Core/SIF/',
+    user: process.env.P360WS_USER || 'domain/username', // username
+    password: process.env.P360WS_PASSWORD || 'password', // passord
+    baseUrl: process.env.P360WS_BASEURL || 'http://tfk-fh-siweb01t.login.top.no:8088/SI.WS.Core/SIF/',
     options: {
       ignoredNamespaces: true
     }
