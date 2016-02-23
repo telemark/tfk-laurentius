@@ -1,6 +1,6 @@
 {
   "name": "tfk-laurentius",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Arkiv",
   "license": "MIT",
   "author": {
@@ -46,7 +46,7 @@
     "streamifier": "^0.1.1",
     "uuid": "^2.0.1",
     "wreck": "^7.0.0",
-    "p360": "^1.1.7",
+    "p360": "^1.1.8",
     "tfk-arkiv-metadatagenerator": "^1.0.0",
     "tfk-dsf-unwrap-contact": "^1.0.2",
     "tfk-dsf-unwrap-parents": "^2.0.1",
