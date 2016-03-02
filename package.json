@@ -15,7 +15,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=4.2.6"
+    "node": ">=4.3.1"
   },
   "scripts": {
     "test": "standard && tap --reporter=spec test/*.js",
@@ -37,8 +37,8 @@
   },
   "devDependencies": {
     "coveralls": "^2.11.6",
-    "standard": "^5.4.1",
-    "tap": "^5.1.1"
+    "standard": "^6.0.7",
+    "tap": "^5.7.0"
   },
   "dependencies": {
     "jsonwebtoken": "^5.5.4",
