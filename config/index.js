@@ -5,7 +5,7 @@ var config = {
   CALLBACK_STATUS_MESSAGE: process.env.TFK_LAURENTIUS_CALLBACK_STATUS_MESSAGE || 'Varselbrev produsert',
   ARCHIVE_JOB_DIRECTORY_PATH: process.env.TFK_LAURENTIUS_ARCHIVE_JOB_DIRECTORY_PATH || 'test/data/archive/jobs',
   ARCHIVE_DONE_DIRECTORY_PATH: process.env.TFK_LAURENTIUS_ARCHIVE_DONE_DIRECTORY_PATH || 'test/data/archive/done',
-  ARCHIVE_ERROR_DIRECTORY_PATH: process.env.TFK_LAURENTIUS_.ARCHIVE_ERROR_DIRECTORY_PATH || 'test/data/archive/errors',
+  ARCHIVE_ERROR_DIRECTORY_PATH: process.env.TFK_LAURENTIUS_ARCHIVE_ERROR_DIRECTORY_PATH || 'test/data/archive/errors',
   p360: {
     user: process.env.TFK_LAURENTIUS_P360WS_USER || 'domain/username', // username
     password: process.env.TFK_LAURENTIUS_P360WS_PASSWORD || 'password', // passord
