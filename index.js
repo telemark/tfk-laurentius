@@ -14,6 +14,7 @@ function tfkLaurentius (item, callback) {
   var addNote = require('./lib/add-note')
   var saveJob = require('./lib/save-job-archive')
   var cleanUp = require('./lib/cleanup-job')
+  var sendStatusMessage = require('.lib/send-status-message.js')
   var starter = streamifier.createReadStream(JSON.stringify(item))
 
   function finished (error, data) {
@@ -35,6 +36,7 @@ function tfkLaurentius (item, callback) {
     addNote,
     saveJob,
     cleanUp,
+    sendStatusMessage,
     finished
   )
 }

@@ -2,7 +2,7 @@
 
 var config = {
   JWT_KEY: process.env.TFK_LAURENTIUS_JWT_KEY || 'NeverShareYourSecret',
-  CALLBACK_STATUS_MESSAGE: process.env.TFK_LAURENTIUS_CALLBACK_STATUS_MESSAGE || 'Varselbrev produsert',
+  CALLBACK_STATUS_MESSAGE: process.env.TFK_LAURENTIUS_CALLBACK_STATUS_MESSAGE || 'Varselbrev arkivert',
   ARCHIVE_JOB_DIRECTORY_PATH: process.env.TFK_LAURENTIUS_ARCHIVE_JOB_DIRECTORY_PATH || 'test/data/archive/jobs',
   ARCHIVE_DONE_DIRECTORY_PATH: process.env.TFK_LAURENTIUS_ARCHIVE_DONE_DIRECTORY_PATH || 'test/data/archive/done',
   ARCHIVE_ERROR_DIRECTORY_PATH: process.env.TFK_LAURENTIUS_ARCHIVE_ERROR_DIRECTORY_PATH || 'test/data/archive/errors',
