@@ -34,9 +34,9 @@ function tfkLaurentius (item, callback) {
     addDocuments,
     addSecret,
     addNote,
-    // sendStatusMessage,
     saveJob,
     cleanUp,
+    sendStatusMessage,
     finished
   )
 }
