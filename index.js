@@ -1,21 +1,22 @@
 'use strict'
 
-function tfkLaurentius (item, callback) {
-  var miss = require('mississippi')
-  var streamifier = require('streamifier')
-  var getNextJob = require('./lib/get-next-job')
-  var prepareItem = require('./lib/prepareItem')
-  var searchContact = require('./lib/search-contact')
-  var addContact = require('./lib/add-private-person')
-  var getCase = require('./lib/get-case')
-  var addCase = require('./lib/add-case')
-  var addDocuments = require('./lib/add-documents')
-  var addSecret = require('./lib/add-secret')
-  var addNote = require('./lib/add-note')
-  var saveJob = require('./lib/save-job-archive')
-  var cleanUp = require('./lib/cleanup-job')
-  var sendStatusMessage = require('./lib/send-status-message')
-  var starter = streamifier.createReadStream(JSON.stringify(item))
+module.exports = (item, callback) => {
+  const miss = require('mississippi')
+  const streamifier = require('streamifier')
+  const getNextJob = require('./lib/get-next-job')
+  const prepareItem = require('./lib/prepareItem')
+  const searchContact = require('./lib/search-contact')
+  const addContact = require('./lib/add-private-person')
+  const getCase = require('./lib/get-case')
+  const addCase = require('./lib/add-case')
+  const addDocuments = require('./lib/add-documents')
+  const addDocumentsNote = require('./lib/add-documents-note.js')
+  const addSecret = require('./lib/add-secret')
+  const addNote = require('./lib/add-note')
+  const saveJob = require('./lib/save-job-archive')
+  const cleanUp = require('./lib/cleanup-job')
+  const sendStatusMessage = require('./lib/send-status-message')
+  const starter = streamifier.createReadStream(JSON.stringify(item))
 
   function finished (error, data) {
     if (error) {
@@ -32,6 +33,7 @@ function tfkLaurentius (item, callback) {
     getCase,
     addCase,
     addDocuments,
+    addDocumentsNote,
     addSecret,
     addNote,
     saveJob,
@@ -40,5 +42,3 @@ function tfkLaurentius (item, callback) {
     finished
   )
 }
-
-module.exports = tfkLaurentius

@@ -1,9 +1,9 @@
 'use strict'
 
-var laurentius = require('./index')
-var input = {}
+const laurentius = require('./index')
+const input = {}
 
-laurentius(input, function (error, message) {
+laurentius(input, (error, message) => {
   if (error) {
     console.error(error)
   } else {
