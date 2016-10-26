@@ -10,7 +10,7 @@ module.exports = (item, callback) => {
   const getCase = require('./lib/get-case')
   const addCase = require('./lib/add-case')
   const addDocuments = require('./lib/add-documents')
-  //const addDocumentsNote = require('./lib/add-documents-note.js')
+  // const addDocumentsNote = require('./lib/add-documents-note.js')
   const addSecret = require('./lib/add-secret')
   const addNote = require('./lib/add-note')
   const saveJob = require('./lib/save-job-archive')
@@ -33,7 +33,7 @@ module.exports = (item, callback) => {
     getCase,
     addCase,
     addDocuments,
-    //addDocumentsNote,
+    // addDocumentsNote,
     addSecret,
     addNote,
     saveJob,
