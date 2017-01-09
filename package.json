@@ -47,7 +47,7 @@
     "uuid": "^2.0.1",
     "wreck": "^7.0.0",
     "p360": "^1.1.11",
-    "tfk-arkiv-metadatagenerator": "2.0.9",
+    "tfk-arkiv-metadatagenerator": "2.0.13",
     "tfk-dsf-unwrap-contact": "^1.0.2",
     "tfk-dsf-unwrap-parents": "^2.0.1",
     "tfk-dsf-normalize-contact": "^1.0.1"
