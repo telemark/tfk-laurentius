@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "jsonwebtoken": "^8.0.0",
-    "mississippi": "^1.2.0",
+    "mississippi": "^3.0.0",
     "streamifier": "^0.1.1",
     "uuid": "^2.0.1",
     "wreck": "^7.0.0",
