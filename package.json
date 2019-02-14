@@ -50,6 +50,6 @@
     "tfk-arkiv-metadatagenerator": "2.0.21",
     "tfk-dsf-unwrap-contact": "^1.0.2",
     "tfk-dsf-unwrap-parents": "^3.0.0",
-    "tfk-dsf-normalize-contact": "^2.0.0"
+    "tfk-dsf-normalize-contact": "^3.0.0"
   }
 }
