@@ -45,7 +45,7 @@
     "mississippi": "^4.0.0",
     "streamifier": "^0.1.1",
     "uuid": "^3.0.0",
-    "wreck": "^7.0.0",
+    "wreck": "^10.0.0",
     "p360": "^3.0.0",
     "tfk-arkiv-metadatagenerator": "2.0.21",
     "tfk-dsf-unwrap-contact": "^1.0.2",
